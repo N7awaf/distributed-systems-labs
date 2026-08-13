@@ -132,8 +132,6 @@ Implements non-blocking academic evaluation using **Java RMI** combined with **`
 [Async Callback]: Response received from server -> Grade for 87.5 is: B+
 
 ```
-```
----
 
 ## 💡 Engineering Insights & Key Learnings
 
@@ -144,7 +142,6 @@ Through building and orchestrating these distributed modules, I gained hands-on 
 * **Distributed Architectural Decoupling:** Implemented multi-tier separation of concerns (Presentation, Business Logic, and Data Tier) to minimize tight coupling and improve scalability.
 * **Remote Procedure Calls (RPC/RMI):** Mastered object reference binding, registry lookup operations, and handling network partition failures (`RemoteException`).
 * **Caching & Latency Mitigation:** Applied local caching in hierarchical systems (such as DNS) to dramatically reduce network hop latencies and minimize redundant remote server queries[cite: 5].
----
 
 ---
 
@@ -170,11 +167,9 @@ cd distributed-systems-labs/lab04-tcp-multithreaded-chat/src/main/java/
 ```bash
 javac com/mycompany/dslab4/*.java
 
-```
 
 
 
----
 
 ### 🚦 2. Execution Sequence & Server Dependencies
 
