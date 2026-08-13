@@ -135,7 +135,9 @@ Implements non-blocking academic evaluation using **Java RMI** combined with **`
 
 ---
 
-## 💻 How to Run Any Lab
+## 💻 How to Run the Projects
+
+### 1. General Execution (Terminal)
 
 1. **Clone the repository:**
 ```bash
@@ -158,6 +160,32 @@ javac com/mycompany/dslab4/*.java
 ```
 
 
-4. **Launch the Server first, then open a second terminal and launch the Client!**
+
+---
+
+### 🚦 2. Execution Sequence & Server Dependencies
+
+To prevent connection exceptions (`Connection Refused` or `NotBoundException`), always start backend servers before running the client:
+
+* **Basic Client-Server Systems (Labs 1–4):**
+* Start `Server` $\rightarrow$ Launch `Client`.
+
+
+
+
+* **3-Tier & Multi-RMI Systems (Labs 5 & 7):**
+* **Lab 5:** Start `DataServer` (Port 8888) $\rightarrow$ Start `ProcessServer` (Port 7777) $\rightarrow$ Launch `Client`.
+* **Lab 7:** Start `SumServer` (Port 1900) $\rightarrow$ Start `TimeServer` (Port 2300) $\rightarrow$ Launch `SyncClient` / `AsyncClient`.
+
+
+* **Hierarchical DNS System (Assignment 1):**
+* Start `AuthServer` (Port 7000) $\rightarrow$ Start `RootServer` (Port 6000) $\rightarrow$ Start `LocalServer` (Port 5000) $\rightarrow$ Launch `Client`.
+
+
+
+
+* **Async RMI System (Assignment 2):**
+* Start `GradeServer` $\rightarrow$ Launch `AsyncGradeClient`.
+```
 
 ```
