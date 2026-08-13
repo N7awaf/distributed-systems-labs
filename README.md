@@ -159,6 +159,5 @@ javac com/mycompany/dslab4/*.java
 
 
 4. **Launch the Server first, then open a second terminal and launch the Client!**
-بهذا يصبح مستودعك شاملاً، منظماً، ويغطي كل تفاصيل مشاريعك بشكل احترافي!
 
 ```
