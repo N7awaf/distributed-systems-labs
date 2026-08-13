@@ -167,9 +167,8 @@ cd distributed-systems-labs/lab04-tcp-multithreaded-chat/src/main/java/
 ```bash
 javac com/mycompany/dslab4/*.java
 
-
-
-
+```
+---
 
 ### 🚦 2. Execution Sequence & Server Dependencies
 
@@ -194,6 +193,3 @@ To prevent connection exceptions (`Connection Refused` or `NotBoundException`), 
 
 * **Async RMI System (Assignment 2):**
 * Start `GradeServer` $\rightarrow$ Launch `AsyncGradeClient`.
-```
-
-```
